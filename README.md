@@ -10,8 +10,11 @@ University project: heuristic solver for a Vehicle Routing Problem (VRP) in ware
 - Feasibility: capacity & required visits validation
 - Evaluation: solution cost validated with provided checker (not included here)
 
+
 ## How to run
 ```bash
 python our_solution.py <instance_file> <seed> <time_limit>
 
-Note: Course instances and checker are not included in this repository.
+## Note
+Course instances and the provided checker are not included in this repository.
+
