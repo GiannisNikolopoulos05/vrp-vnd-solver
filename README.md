@@ -11,12 +11,20 @@ This repository contains a Python implementation that:
 ## Note
 Course/competition instances and the provided solution checker are **not included** in this repository.
 
-## Problem (high level)
-- A set of customer nodes (warehouse locations) must be served by a fixed number of vehicles.
-- Each node belongs to a **family (SKU group)**.
-- Vehicles have a **capacity** constraint.
-- Only a required number of visits per family is needed (not necessarily all nodes).
-- Goal: **minimize total travel cost**.
+---
+
+## Problem Summary (Warehouse Picking VRP)
+We solve a warehouse picking **Vehicle Routing Problem (VRP)** where picker vehicles collect ordered items stored across warehouse shelves and return them to a central location (depot). The goal is to **minimize total routing cost**.
+
+**Scenario (high level):**
+- E-commerce warehouse with many SKUs stored using **scattered storage / mixed shelves** (same SKU in multiple locations).
+- A homogeneous fleet of **13 picker vehicles**, each with **capacity 270**.
+- All routes **start and end at the depot (node 0)**.
+- Each item belongs to exactly one **SKU family**; items in the same family have equal demand.
+- Each family has a **required number of items to pick** (not all nodes must be visited).
+- Each customer node can be visited **at most once**, while respecting **vehicle capacity** constraints.
+
+---
 
 ## Approach
 ### 1) Construction (Initial Solution)
@@ -31,12 +39,15 @@ Applies multiple neighborhoods to reduce total cost:
 
 Search is typically **seeded** and **time-limited**.
 
+---
+
 ## Repository contents
 - `our_solution.py` — main solver (construction + VND improvement)
+
+---
 
 ## How to run
 Example usage (as implemented in `our_solution.py`):
 
 ```bash
 python our_solution.py <instance_file> <seed> <time_limit>
-
