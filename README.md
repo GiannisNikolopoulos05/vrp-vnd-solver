@@ -8,6 +8,9 @@ This repository contains a Python implementation that:
 - improves it using **Variable Neighborhood Descent (VND)** with local search moves
 - outputs routes in the required solution format for external validation
 
+## Note
+Course/competition instances and the provided solution checker are **not included** in this repository.
+
 ## Problem (high level)
 - A set of customer nodes (warehouse locations) must be served by a fixed number of vehicles.
 - Each node belongs to a **family (SKU group)**.
