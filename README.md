@@ -13,3 +13,5 @@ University project: heuristic solver for a Vehicle Routing Problem (VRP) in ware
 ## How to run
 ```bash
 python our_solution.py <instance_file> <seed> <time_limit>
+
+Note: Course instances and checker are not included in this repository.
