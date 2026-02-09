@@ -51,4 +51,3 @@ Example usage (as implemented in `our_solution.py`):
 
 ```bash
 python our_solution.py <instance_file> <seed>
-
