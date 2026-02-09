@@ -68,6 +68,3 @@ We tested seeds 1..5 and selected the best-performing one:
 ![Run and checker validation](media/run_validation.png)
 
 ---
-
-## Skills / Topics
-Operations Research • Optimization • Vehicle Routing Problem (VRP) • Heuristics • Metaheuristics • Local Search • Python • Supply Chain / Logistics
