@@ -50,4 +50,5 @@ Search is typically **seeded** and **time-limited**.
 Example usage (as implemented in `our_solution.py`):
 
 ```bash
-python our_solution.py <instance_file> <seed> <time_limit>
+python our_solution.py <instance_file> <seed>
+
